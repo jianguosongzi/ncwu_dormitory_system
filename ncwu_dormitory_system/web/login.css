@@ -1,0 +1,189 @@
+
+header {
+    background-color: #1c0d00;
+    color: #fff;
+    padding: 10px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right:40px;
+}
+
+
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display:block;
+    padding:10px;
+}
+
+header nav ul li:hover {
+    background-color: #dc8407;
+}
+
+
+
+/* 商品分类样式 */
+header nav ul li.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header nav ul li.dropdown > a {
+    position: relative;
+    display: inline-block;
+}
+
+header nav ul li.dropdown > a:after {
+    content: "\25BC"; /* 下拉箭头 */
+    font-size: 0.8em;
+    color: #fff;
+    float: right;
+    margin-left: 10px;
+}
+
+header nav ul li.dropdown ul {
+    display: none;
+    color: #fff;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+header nav ul li.dropdown ul li {
+    background-color:#000000;
+    clear: both;
+    color: #000000;
+    width: 50%;
+}
+
+header nav ul li.dropdown:hover ul {
+    display: block;
+    color: #000000;
+}
+
+.search-icon {
+    /* 设置图标的大小 */
+    font-size: 2em; /* 使用em单位可以根据父元素的字体大小进行缩放 */
+    /* 设置图标的颜色 */
+    color: #fff; /* 白色，你可以根据需要更改颜色 */
+    /* 添加其他样式，如边距、填充、光标样式等 */
+    cursor: pointer; /* 当鼠标悬停在图标上时更改光标样式 */
+    margin-right:-700px;
+}
+
+
+.shopping-cart-icon {
+
+    cursor: pointer; /* 当鼠标悬停在购物车上时更改光标样式 */
+    font-size:2em;
+    color:#fff;
+    margin-right:20px;
+}
+
+
+
+
+
+
+.form-container {
+    text-align: center; /* 让表单内的元素居中对齐 */
+}
+.form-group {
+    /* 为每个表单组添加一些底部间距 */
+}
+
+
+section h2 {
+    text-align: center;
+    margin-top:-20px;
+    color: #dc8407;
+}
+
+section form label {
+    text-align: left;
+    margin-left: 350px;
+    display: block;
+    margin-bottom: 1px;
+}
+/*section form label1 {*/
+/*    text-align: left;*/
+/*    margin-left: 350px;*/
+/*    display: block;*/
+/*    margin-bottom: 1px;*/
+/*}*/
+
+section form label:after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+/*section form label1:after {*/
+
+/*    margin-left: 5px;*/
+/*}*/
+
+section form input[type="text"],
+section form input[type="email"],
+section form input[type="people"],
+section form input[type="phone"],
+section form input[type="address"],
+section form input[type="password"] {
+
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+
+section form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #dc8407;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+section form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #d4d3d2;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+header nav ul {
+    transform: translateX(50px); /* 这会将ul元素向右移动50像素 */
+
+    header nav ul li {
+        position: relative;
+        margin-right: 500px; /* 增加列表项之间的间距 */
+    }
+}
